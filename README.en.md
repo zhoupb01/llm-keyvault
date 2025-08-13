@@ -106,6 +106,8 @@ llm-keyvault/
 
 The application supports both Chinese and English languages. You can switch languages using the language toggle in the top-right corner of the interface.
 
+- 📖 [中文文档](./README.md) - Chinese Documentation
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.

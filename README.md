@@ -106,6 +106,8 @@ llm-keyvault/
 
 应用支持中文和英文两种语言，可以通过界面右上角的语言切换器进行切换。
 
+- 📖 [English Documentation](./README.en.md) - 英文版文档
+
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request！

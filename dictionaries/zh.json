@@ -105,5 +105,9 @@
         "showKey": "显示密钥",
         "hideKey": "隐藏密钥",
         "toggleStatus": "点击切换状态"
+    },
+    "securityNotice": {
+        "title": "🔒 100% 本地存储",
+        "description": "所有密钥数据仅存储在您的浏览器本地，绝对不会发送到任何后端服务器"
     }
 }

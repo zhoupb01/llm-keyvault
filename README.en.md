@@ -96,10 +96,11 @@ llm-keyvault/
 - Powerful search and filtering capabilities
 
 ### Data Security
-- Local storage, data never leaves your device
-- Import/export functionality for backup
-- Key content can be hidden/shown
-- Secure status toggle mechanism
+- 🔒 **100% Local Storage** - All key data is stored only in your browser locally, **NEVER sent to any backend server**
+- 🛡️ **Privacy Protection** - Data stays completely on your device, ensuring your API keys are absolutely secure
+- 📤 **Import/Export** - Support for import/export functionality for local backup
+- 👁️ **Content Hiding** - Key content can be hidden/shown to prevent leakage
+- 🔐 **Security Mechanism** - Secure status toggle mechanism to prevent accidental operations
 
 ## 🌍 Internationalization
 

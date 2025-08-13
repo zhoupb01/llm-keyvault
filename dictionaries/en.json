@@ -105,5 +105,9 @@
         "showKey": "Show key",
         "hideKey": "Hide key",
         "toggleStatus": "Click to toggle status"
+    },
+    "securityNotice": {
+        "title": "🔒 100% Local Storage",
+        "description": "All key data is stored only in your browser locally, NEVER sent to any backend server"
     }
 }

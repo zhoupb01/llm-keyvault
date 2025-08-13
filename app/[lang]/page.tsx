@@ -75,9 +75,17 @@ export default async function Home({ params }: { params: Promise<{ lang: "en" | 
                         <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                             {dictionary.title}
                         </h1>
-                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
                             {dictionary.description}
                         </p>
+                        <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg border border-green-200 dark:border-green-800 max-w-2xl mx-auto mb-8">
+                            <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">
+                                {dictionary.securityNotice.title}
+                            </h3>
+                            <p className="text-sm text-green-700 dark:text-green-300">
+                                {dictionary.securityNotice.description}
+                            </p>
+                        </div>
 
                         {/* Quick Stats */}
                         <QuickStats dictionary={dictionary} />

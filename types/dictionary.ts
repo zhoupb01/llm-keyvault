@@ -123,4 +123,10 @@ export interface Dictionary {
         hideKey: string
         toggleStatus: string
     }
+
+    // 本地存储安全提示
+    securityNotice: {
+        title: string
+        description: string
+    }
 }

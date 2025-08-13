@@ -2,6 +2,10 @@
 
 A modern web application for securely managing and storing LLM API keys. Supports multiple LLM platforms with an intuitive interface for managing your API keys.
 
+**🌐 Website**: https://llm-keyvault.zhoupb.com
+
+📖 [中文文档](./README.md) | English Documentation
+
 ## ✨ Key Features
 
 - 🔐 **Secure Management** - Safely store and manage your LLM API keys
@@ -105,8 +109,6 @@ llm-keyvault/
 ## 🌍 Internationalization
 
 The application supports both Chinese and English languages. You can switch languages using the language toggle in the top-right corner of the interface.
-
-- 📖 [中文文档](./README.md) - Chinese Documentation
 
 ## 🤝 Contributing
 

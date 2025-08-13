@@ -2,6 +2,10 @@
 
 一个安全管理和存储 LLM API 密钥的现代化 Web 应用程序。支持多种 LLM 平台，提供直观的界面来管理您的 API 密钥。
 
+**🌐 网站链接**: https://llm-keyvault.zhoupb.com
+
+📖 [English Documentation](./README.en.md) | 中文文档
+
 ## ✨ 主要特性
 
 - 🔐 **安全管理** - 安全地存储和管理您的 LLM API 密钥
@@ -105,8 +109,6 @@ llm-keyvault/
 ## 🌍 国际化
 
 应用支持中文和英文两种语言，可以通过界面右上角的语言切换器进行切换。
-
-- 📖 [English Documentation](./README.en.md) - 英文版文档
 
 ## 🤝 贡献
 

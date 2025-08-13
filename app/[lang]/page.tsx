@@ -28,28 +28,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: "en
                 "max-snippet": -1,
             },
         },
-        openGraph: {
-            title: dictionary.meta.title,
-            description: dictionary.meta.description,
-            type: "website",
-            locale: lang === "zh" ? "zh_CN" : "en_US",
-            siteName: dictionary.meta.siteName,
-            images: [
-                {
-                    url: "/og-image.png",
-                    width: 1200,
-                    height: 630,
-                    alt: dictionary.meta.title,
-                },
-            ],
-        },
-        twitter: {
-            card: "summary_large_image",
-            title: dictionary.meta.title,
-            description: dictionary.meta.description,
-            images: ["/og-image.png"],
-            creator: "@llmkeyvault",
-        },
         icons: {
             icon: "/favicon.ico",
         },

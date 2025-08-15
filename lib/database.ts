@@ -32,7 +32,13 @@ class KeyVaultDatabase extends Dexie {
     }
 
     async getAllApiKeys(): Promise<ApiKey[]> {
-        return this.apiKeys.orderBy("created_at").reverse().toArray()
+        const keys = await this.apiKeys.orderBy("created_at").reverse().toArray()
+        // 按状态排序：可用的排在前面
+        return keys.sort((a, b) => {
+            if (a.status === "available" && b.status !== "available") return -1
+            if (a.status !== "available" && b.status === "available") return 1
+            return 0
+        })
     }
 
     async getApiKeyById(id: number): Promise<ApiKey | undefined> {
@@ -45,7 +51,7 @@ class KeyVaultDatabase extends Dexie {
 
     async searchApiKeys(query: string): Promise<ApiKey[]> {
         const lowerQuery = query.toLowerCase()
-        return this.apiKeys
+        const keys = await this.apiKeys
             .filter(key =>
                 key.nickname.toLowerCase().includes(lowerQuery) ||
                 key.platform.toLowerCase().includes(lowerQuery) ||
@@ -54,6 +60,13 @@ class KeyVaultDatabase extends Dexie {
                 (!!key.note && key.note.toLowerCase().includes(lowerQuery))
             )
             .toArray()
+        
+        // 按状态排序：可用的排在前面
+        return keys.sort((a, b) => {
+            if (a.status === "available" && b.status !== "available") return -1
+            if (a.status !== "available" && b.status === "available") return 1
+            return 0
+        })
     }
 
     async exportData(): Promise<ApiKey[]> {
